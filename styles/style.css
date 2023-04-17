@@ -1,0 +1,282 @@
+/*Locally hosted font for headings*/
+@font-face {
+    font-family: Balgruf;
+    src: url("../localfonts/Balgruf.otf") format("opentype");
+
+    font-weight: normal;
+    font-style: normal;
+
+    /*Although .woff is the better format, it significantly reduces choices on fontsquirell
+    if one isn't paying*/
+
+}
+
+/*Import Font*/
+@import url(https://fonts.googleapis.com/css2?family=Sarabun&display=swap);
+
+/*Global Selector*/
+* {
+    /*Reset*/
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Class Selector*/
+.wrapper {
+    /*Creating a simple one-column layout for mobile view*/
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+    /*A nice off-black color*/
+    background-color: #333;
+}
+
+/*Setting paragraph font*/
+
+p,
+input,
+label {
+    color: #F7F7F7;
+    line-height: 1.5;
+    font-size: calc(14px + 0.3vw);
+    font-family: 'Sarabun', sans-serif;
+}
+
+/*Setting the header/s font*/
+
+h1,
+h2,
+h3 {
+    font-family: 'Balgruf', sans-serif;
+    color: #F7F7F7;
+}
+
+h2,
+h3 {
+    padding-left: 5vw;
+}
+
+/*Element selector*/
+
+h1 {
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    padding: 2em 0em;
+    height: auto;
+    background-image: url(../images/blueflare.webp);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2em;
+}
+
+/*ABOUT SECTION*/
+/*Class Selector*/
+
+.content {
+    display: flex;
+    gap: 1em;
+    width: 90vw;
+    padding: 2em 5vw 2em;
+}
+
+/*Descendant Combinator*/
+
+.content img {
+    max-inline-size: 50%;
+}
+
+/*SKILLS SECTION*/
+
+.DisplayIcons {
+    padding: 2em 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+}
+
+.DisplayIcons section {
+    /*Just to align text with images*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DisplayIcons img {
+    inline-size: 30%;
+}
+
+/*Works Section*/
+
+.Works section {
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    justify-content: space-between;
+}
+
+.Works img {
+    width: 30vw;
+    border: #F7F7F7 2px solid;
+    border-radius: 2px;
+}
+
+.Works img:active {
+    z-index: 1;
+}
+
+#screenshot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/*Pseudo-class selectors*/
+
+#screenshot>img:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-top: 0px;
+}
+
+#screenshot>img:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-bottom: 0px;
+}
+
+h3 {
+    border: #F7F7F7 2px solid;
+    border-right: 0px;
+}
+
+/*Contact*/
+
+.form {
+    background-image: url(../images/blue-fire.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 5vw;
+
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding-left: 5vw;
+}
+
+.button {
+    color: #F7F7F7;
+    background-color: #333;
+    height: 8vh;
+    width: 30vw;
+    font-size: 1rem;
+    margin: 5vw 0vw 5vw 5vw;
+}
+
+.input {
+    color: #F7F7F7;
+    margin: 1em 0em;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    width: 30vw;
+    margin: 1vh 0;
+}
+
+gradient {
+    width: 100vw;
+    background-image: linear-gradient(to right, #11364e, #2a417f, #11364e);
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em;
+}
+
+footer a {
+    text-decoration: none;
+    color:#F7F7F7;
+}
+
+/*DESKTOP*/
+
+@media (min-width: 900px) {
+
+    .wrapper {
+        width: 100vw;
+    }
+
+    .content {
+        display: grid;
+        grid-template-areas:
+        "p p p"
+        ". im ."
+    }
+
+    .content p {
+        grid-area: p;
+    }
+
+    .content img {
+        max-width: 25%;
+        grid-area: im;
+        justify-self: center;
+
+    }
+
+    .DisplayIcons img {
+        inline-size: 15%;
+    }
+
+    .DisplayIcons img:hover{
+        filter: invert(100%) !important;
+    }
+
+    .DisplayIcons {
+        gap: 1vw;
+        padding: 1em 0em;
+    }
+
+    .Works section {
+        height: fit-content;
+    }
+
+    .Works img {
+        width: 15vw;
+        margin-left: 1em;
+    }
+
+    .Works img:hover {
+        z-index: 1;
+    }
+
+    .form {
+        width: 50vw;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    footer img {
+        width: 15vw;
+        margin: 1vh 0;
+    }
+}

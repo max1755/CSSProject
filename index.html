@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Portfolio example for project</title>
+</head>
+
+
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+
+            <h1>My Portfolio</h1>
+
+        </header>
+
+        <main>
+
+
+            <div class="aboutContent">
+
+                <h2>Computer Expert</h2>
+
+                <div class="content">
+                    <p>
+                        Hello, my name is Max.
+                        I use to study history in Kingston at Queen's University before becoming a humble student of
+                        computer science at Barrie's Georgian College.
+                    </p>
+
+                    <img src="images/picture1.png" alt="Picture of a man, probably the creator of the webpage">
+                </div>
+            </div>
+
+
+            <div class="Skills">
+                <h2>Some skills I have</h2>
+
+                <div class="DisplayIcons">
+
+                    <section>
+                        <img src="images/icons/icon1.png" alt="Icon representing Visual Basic coding language">
+                        <p>Visual Basic</p>
+                    </section>
+
+
+                    <section>
+                        <img src="images/icons/icon2.png" alt="Icon representing PHP coding language">
+                        <p>PHP</p>
+                    </section>
+
+
+                    <section>
+                        <img src="images/icons/icon3.png" alt="Icon representing Javascript coding language">
+                        <p>JavaScript</p>
+                    </section>
+
+
+                    <section>
+                        <img src="images/icons/icon4.png" alt="Icon representing Python coding language">
+                        <p>Python</p>
+                    </section>
+
+                    <section>
+                        <img src="images/icons/icon5.png" alt="Icon representing Java coding language">
+                        <p>JAVA</p>
+                    </section>
+
+                    <section>
+                        <img src="images/icons/icon6.png" alt="Icon representing photoshop app">
+                        <p>Photoshop</p>
+                    </section>
+
+                    <section>
+                        <img src="images/icons/icon7.png" alt="Icon representing C# coding language">
+                        <p>C#</p>
+                    </section>
+
+                    <section>
+                        <img src="images/icons/icon8.png" alt="Icon representing SASM Assembly coding language">
+                        <p>Assembly</p>
+                    </section>
+
+                </div>
+
+
+            </div>
+
+            <div class="Works">
+
+                <h2>Some stuff I done</h2>
+                <h3>Example 1</h3>
+                <section>
+                    <p>
+                        This is Ogrelord! A simple adventure game I made in Programming Fundamentals
+                        semester 1. It uses entirely ASCII art for graphics.
+                    </p>
+
+                    <div id="screenshot">
+                        <img src="images/sc2.png" alt="">
+                        <img src="images/sc1.png" alt="">
+                    </div>
+
+                </section>
+
+                <h3>Example 2</h3>
+                <section>
+                    <p>
+                        This is the number guessing website! It is a fun game for all ages!
+                        I made it for Javascript in computer programming semester 1.
+                    </p>
+
+                    <div id="screenshot">
+                        <img src="images/sc4.png" alt="">
+                        <img src="images/sc3.png" alt="">
+                    </div>
+
+                </section>
+
+                <h3>Example 3</h3>
+                <section>
+                    <p>
+                        This is an example of my attempt at a 'CSS Zen Garden'
+                        Made when learning CSS
+                    </p>
+
+                    <div id="screenshot">
+                        <img src="images/sc5.png" alt="">
+                        <img src="images/sc6.png" alt="">
+                    </div>
+
+                </section>
+
+                <h3>Example 4</h3>
+                <section>
+                    <p>
+                        This is an example database I constructed for a first
+                        class in Relational Databases. I can use SQL!
+                    </p>
+
+                    <div id="screenshot">
+                        <img src="images/sc8.png" alt="">
+                        <img src="images/sc7.png" alt="">
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="contact">
+
+                <h2>Contact Me</h2>
+
+                <div class="form">
+                    <p><br>
+                        Feel free to fill out the contact form below:
+                        <br>
+                    </p>
+
+                    <fieldset>
+                        <legend>Your Information</legend>
+
+                        <div>
+                            <label for="firstName">First Name:</label><br>
+                            <input type="text" name="firstName" id="firstName" class="input" required maxlength="15"
+                                minlength="2" placeholder="Name">
+                            <small class="req">
+                                Required
+                            </small>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name:</label><br>
+                            <input type="text" name="lastName" id="lastName" class="input" required maxlength="15"
+                                minlength="2" placeholder="Last Name">
+                            <small class="req">
+                                Required
+                            </small>
+                        </div>
+                        <div>
+                            <label for="company">Company Name:</label><br>
+                            <input type="text" name="company" id="company" maxlength="25" class="input" minlength="2"
+                                placeholder="Company Name">
+                        </div>
+                        <legend>Your Contact Options</legend>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" class="input" required>
+                            <small class="req">
+                                Required
+                            </small>
+                        </div>
+                        <div>
+                            <label for="tel">Phone:</label>
+                            <input type="tel" name="tel" id="tel" placeholder="1(555)555-5555" class="input">
+                        </div>
+
+                        <div>
+                            <label for="message">Your Message</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10" class="input" required
+                                placeholder="Your Inquiry"></textarea><br>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Submit Inquiry" class="button">
+                            <p> Don't forget to hit the submit button!</p>
+                        </div>
+                        </form>
+
+                    </fieldset>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>This site is currently</p>
+            <img src="images/construction.gif" alt="website under construction">
+            <gradient>
+                <p><a href='#'>Back to top</a></p>
+            </gradient>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
