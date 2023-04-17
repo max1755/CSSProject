@@ -62,17 +62,17 @@ h3 {
 h1 {
     background-color: transparent;
     width: 100vw;
-    display: flex;
-    justify-content: center;
+    padding-left: 5vw;
+
 }
 
 header {
-    display: flex;
     padding: 2em 0em;
     height: auto;
     background-image: url(../images/blueflare.webp);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 2em;
 }
 
